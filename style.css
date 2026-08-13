@@ -1,0 +1,67 @@
+/* Resolução Base Estilo Minimalista Ozgur */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --acc-color: #333333; /* Cor dos botões */
+    --base-font-size: 18px; /* Fonte maior por padrão */
+    --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: var(--base-font-size);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header de Acessibilidade Fixo */
+header#accessibility-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+#accessibility-nav .controls button {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#audio-player-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#audio-progress {
+    width: 150px;
+}
+
+/* Conteúdo Principal Estilo "Artigo Clean" */
+main#conteudo-principal {
+    margin-top: 100px; /* Espaço para o header fixo */
+    padding: 40px 10%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 { font-size: 2.5rem; font-weight: 300; }
+h2 { font-size: 1.8rem; font-weight: 400; margin-top: 40px; }
+p { margin-bottom: 20px; }
+
+/* Utilitários */
+.hidden { display: none !important; }

@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessibilidade na Óptica - O Guia da Luz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header id="accessibility-nav" role="banner">
+        <div class="logo">ÓPTICA ACESSÍVEL</div>
+        <div class="controls">
+            <button onclick="alterarFonte(1)" aria-label="Aumentar tamanho da fonte">A+</button>
+            <button onclick="alterarFonte(-1)" aria-label="Diminuir tamanho da fonte">A-</button>
+            
+            <div id="audio-player-controls" class="hidden" role="region" aria-label="Controles de Narração">
+                <button onclick="voltar10s()" aria-label="Voltar 10 segundos">⏪ 10s</button>
+                <button id="play-pause-btn" onclick="togglePlayPause()" aria-label="Pausar narração">⏸️</button>
+                <button onclick="adiantar10s()" aria-label="Adiantar 10 segundos">10s ⏩</button>
+                <progress id="audio-progress" value="0" max="100" aria-label="Barra de progresso da narração"></progress>
+                <span id="audio-time" aria-hidden="true">0:00</span>
+            </div>
+        </div>
+    </header>
+
+    <main id="conteudo-principal" role="main">
+        <article>
+            <h1>O Guia Completo sobre Óptica</h1>
+            <p class="resumo">Use os controles no topo da página para ouvir o conteúdo ou ajustar o tamanho do texto.</p>
+            
+            <button class="start-narration" onclick="iniciarNarracaoConteudo('conteudo-principal')" aria-label="Ouvir este artigo">Ouvir Artigo ▶️</button>
+
+            <hr>
+
+            <section id="oque-e">
+                <h2>O que é fibra óptica</h2>
+                <p>A fibra óptica é um filamento flexível e transparente, extremamente fino (às vezes mais fino que um fio de cabelo), feito de vidro de alta pureza ou plástico.</p>
+            </section>
+
+            <section id="como-funciona">
+                <h2>Como ela funciona</h2>
+                <p>Ela funciona transmitindo informações através de feixes de luz, em vez de eletricidade. Um transmissor emite luz, que viaja pelo núcleo da fibra.</p>
+            </section>
+
+            <section id="do-que-e-feita">
+                <h2>Do que é feita</h2>
+                <p>É composta por três camadas principais: o núcleo (por onde a luz passa), a casca (que reflete a luz de volta ao núcleo) e o revestimento (para proteção contra danos).</p>
+            </section>
+
+            <section id="para-que-utilizamos">
+                <h2>Para que utilizamos</h2>
+                <p>É a base da internet moderna ultrarrápida, telefonia digital, televisão a cabo e também usada em exames médicos como endoscopia.</p>
+            </section>
+
+            <section id="principio-fisico">
+                <h2>Qual princípio físico utiliza</h2>
+                <p>O princípio físico fundamental é a Reflexão Interna Total. A luz rebatendo continuamente nas paredes do núcleo sem conseguir escapar.</p>
+            </section>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
