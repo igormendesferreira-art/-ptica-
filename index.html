@@ -14,12 +14,12 @@
             <button onclick="alterarFonte(1)" aria-label="Aumentar tamanho da fonte">A+</button>
             <button onclick="alterarFonte(-1)" aria-label="Diminuir tamanho da fonte">A-</button>
             
+            <button id="theme-toggle" onclick="toggleDarkMode()" aria-label="Alternar para modo escuro">🌙 Modo Escuro</button>
+
             <div id="audio-player-controls" class="hidden" role="region" aria-label="Controles de Narração">
                 <button onclick="voltar10s()" aria-label="Voltar 10 segundos">⏪ 10s</button>
                 <button id="play-pause-btn" onclick="togglePlayPause()" aria-label="Pausar narração">⏸️</button>
                 <button onclick="adiantar10s()" aria-label="Adiantar 10 segundos">10s ⏩</button>
-                <progress id="audio-progress" value="0" max="100" aria-label="Barra de progresso da narração"></progress>
-                <span id="audio-time" aria-hidden="true">0:00</span>
             </div>
         </div>
     </header>
@@ -27,7 +27,7 @@
     <main id="conteudo-principal" role="main">
         <article>
             <h1>O Guia Completo sobre Óptica</h1>
-            <p class="resumo">Use os controles no topo da página para ouvir o conteúdo ou ajustar o tamanho do texto.</p>
+            <p class="resumo">Use os controles no topo da página para ouvir o conteúdo, ajustar a fonte ou trocar o tema.</p>
             
             <button class="start-narration" onclick="iniciarNarracaoConteudo('conteudo-principal')" aria-label="Ouvir este artigo">Ouvir Artigo ▶️</button>
 
@@ -56,6 +56,12 @@
             <section id="principio-fisico">
                 <h2>Qual princípio físico utiliza</h2>
                 <p>O princípio físico fundamental é a Reflexão Interna Total. A luz rebatendo continuamente nas paredes do núcleo sem conseguir escapar.</p>
+            </section>
+
+            <section id="inovacao">
+                <h2>Inovação Recente: Fibra Óptica de Núcleo Oco (Hollow-Core)</h2>
+                <p>Uma das inovações mais promissoras é a fibra de núcleo oco. Em vez de transmitir luz através do vidro sólido, a luz viaja por um canal de ar central cercado por microestruturas de vidro.</p>
+                <p>Como a luz se move cerca de 50% mais rápido no ar do que no vidro sólido, essa tecnologia reduz drasticamente a latência (o tempo de resposta da conexão), sendo revolucionária para áreas como cirurgias remotas em tempo real, carros autônomos e mercados financeiros globais.</p>
             </section>
         </article>
     </main>
